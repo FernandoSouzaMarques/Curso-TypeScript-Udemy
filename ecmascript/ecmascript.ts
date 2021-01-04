@@ -79,3 +79,27 @@ console.log(Math.max(...numbers)) // Nesse caso, é chamado de spread pois ele "
 
 const turmaA: Array<string> = ['Maria', 'José', 'João']
 const turmaB: Array<string> = ['Pedro', 'Paulo', ...turmaA] // Nesse caso, é chamado de rest pois ele "junta" os elementos, sendo o mesmo de colocar: const turmaB: Array<string> = ['Pedro', 'Paulo', 'Maria', 'José', 'João']
+
+
+// Destructuring (Array)
+
+const caracteristicas = ['Motor Zetec 1.8', 2020]
+// const motor = caracteristicas[0]
+// const ano = caracteristicas[1]
+
+const [motor, ano] = caracteristicas
+
+console.log(motor, ano)
+
+// Destructuring (Objeto)
+
+const item = {
+  nome: 'SSD 480GB',
+  preco: 200,
+}
+
+// const nomeItem = item.nome
+// const precoItem = item.preco
+
+const { nome: n, preco: p} = item
+console.log(n, p)
