@@ -53,4 +53,9 @@ function contagemRegressiva(inicio = 5, fim = inicio - 5) {
 contagemRegressiva();
 contagemRegressiva(5);
 contagemRegressiva(5, 10);
+// Rest & Spread
+const numbers = [1, 12, 99, 5];
+console.log(Math.max(...numbers)); // Nesse caso, é chamado de spread pois ele "espalha" os valores do array, ficando, por exemplo, console.log(Math.max(1,12,99,5))
+const turmaA = ['Maria', 'José', 'João'];
+const turmaB = ['Pedro', 'Paulo', ...turmaA]; // Nesse caso, é chamado de rest pois ele "junta" os elementos, sendo o mesmo de colocar: const turmaB: Array<string> = ['Pedro', 'Paulo', 'Maria', 'José', 'João']
 //# sourceMappingURL=ecmascript.js.map
