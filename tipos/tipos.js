@@ -126,3 +126,4 @@ var contato1 = {
     tel2: null
 };
 console.log(contato1);
+//# sourceMappingURL=tipos.js.map
