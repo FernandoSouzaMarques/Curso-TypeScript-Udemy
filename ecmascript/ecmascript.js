@@ -40,5 +40,17 @@ arrowComThis()
 
 const arrowComThisEspecial = arrowComThis.bind(3)
 arrowComThisEspecial()
-*/ 
+*/
+// Parametro padrão
+function contagemRegressiva(inicio = 5, fim = inicio - 5) {
+    console.log(inicio);
+    while (inicio > fim) {
+        inicio--;
+        console.log(inicio);
+    }
+    console.log("Fim!");
+}
+contagemRegressiva();
+contagemRegressiva(5);
+contagemRegressiva(5, 10);
 //# sourceMappingURL=ecmascript.js.map
